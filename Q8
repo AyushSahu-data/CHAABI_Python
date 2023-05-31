@@ -1,0 +1,15 @@
+A0 : The value of A0 will be {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}.
+A1 : The value of A1 will be range(0, 10), which represents a sequence of numbers from 0 to 9.
+A2 : Since A1 contains numbers from 0 to 9, and A0 contains keys 'a', 'b', 'c', 'd', 'e', the list comprehension [i for i in A1 if i in A0] will filter out 
+     the numbers that are also keys in A0. In this case, it will filter out 0, 1, 2, 3, and 4, as they are present in A0. So, A2 will be [5].
+A3 : This list comprehension [A0[s] for s in A0] will iterate over the keys in A0 and retrieve their corresponding values. Since A0 contains keys
+     'a', 'b', 'c', 'd', 'e', it will fetch the values 1, 2, 3, 4, and 5 in that order. So, A3 will be [1, 2, 3, 4, 5].
+A4 : This list comprehension [i for i in A1 if i in A3] will filter out the numbers from A1 that are also present in A3. Since A3 contains values
+     1, 2, 3, 4, and 5, A4 will be [1, 2, 3, 4, 5], which are all the numbers in A1 that are also present in A3.
+A5 : This dictionary comprehension {i: i*i for i in A1} will create a dictionary where each key is a number from A1, and the corresponding value 
+     is the square of that number. Since A1 contains numbers from 0 to 9, A5 will be {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}.
+A6 :This list comprehension [[i, i*i] for i in A1] will create a list of lists, where each inner list contains a number from A1 followed by its square. 
+     Since A1 contains numbers from 0 to 9, A6 will be [[0, 0], [1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64], [9, 81]].
+A7 : The final value of A7 is the sum of all the elements in the list which is 21
+A8 : The lambda function multiplies each element by 2. So, the final value of A8 is an iterator object is : [2, 4, 6, 8]
+A9 : ['want', 'learn', 'python'] the lambda function evaluates to True for the elements "want", "learn", and "python" because their lengths are greater than 3.
