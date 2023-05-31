@@ -1,0 +1,26 @@
+def f(lst, key):
+    if key == "fruit":
+        sorted_list = sorted(lst, key=lambda x: x["fruit"])
+    elif key == "color":
+        sorted_list = sorted(lst, key=lambda x: x["color"])
+    else:
+        print("Invalid key.")
+        return
+    
+    for item in sorted_list:
+        print(item)
+input1 = [
+    {"fruit": "orange", "color": "orange"},
+    {"fruit": "apple", "color": "red"},
+    {"fruit": "banana", "color": "yellow"},
+    {"fruit": "blueberry", "color": "blue"}
+]
+
+print("Sorted by 'fruit' key:")
+f(input1, "fruit")
+
+print("\nSorted by 'color' key:")
+f(input1, "color")
+
+print("\nSorted by 'invalid' key:")
+f(input1, "invalid")
